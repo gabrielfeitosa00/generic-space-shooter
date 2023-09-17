@@ -15,7 +15,7 @@ public class scoreScript : MonoBehaviour
     public static void addScore(int value){
         score += value;
         txtScore.GetComponent<TMP_Text>().text = "Score: " + score;
-        if(score % 1000 == 0){
+        if(score % 100 == 0){
             liveScript.addLive();
         }
     }
